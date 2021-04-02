@@ -1,0 +1,32 @@
+body{
+    background-image: url(../images/background-906143_1920.jpg);
+    background-size: cover;
+    background-attachment:fixed;
+}
+
+h1,h2,p {
+    font-family:arial ;
+}
+h1,h2{
+    text-align: center;
+}
+
+.presentation{
+    background-color:white;
+    
+    
+    
+}
+
+div>p{
+    text-align:justify;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 30px;
+    padding-top: 30px;
+
+}
+
+.espacement{
+    height:200px;
+}
