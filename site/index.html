@@ -5,18 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <title>David's Lemonade</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+  </style>  
+<title>David's Lemonade</title>
   </head>
 
   <body>
-    <header>
+    <header class="citronBackground">
       <!--J'imagine qu'ici ce sont deux images par contre pour les background avec les citrons au début aucune idée à part de faire des divs-->
-      <div><img src="./img/logo_Davids.svg" alt="" /></div>
+      <div class="roundBorder gouttiere"><img id="logo" src="./img/logo_Davids.svg" alt="" /></div>
+      <img id="arrow" src="./img/double_fleche.png" alt="arrow"/>
     </header>
 
     <main>
-      <div id="firstLayer">
-        <div><h1>Presentation</h1></div>
+      <div style="position :absolute; background-image:url('./img/background-906143_1920.jpg'); width: inherit; height: 25%; z-index: -1;"></div>
+      <div id="firstLayer" class="roundBorder">
+        <div class="titleContainer roundBorder gouttiere"><h1 class="title">Presentation</h1></div>
         <span
           >Aliquam eget nisi convallis, gravida arcu eget, maximus tellus.
           Maecenas ut maximus orci, sed finibus purus. Quisque dignissim egestas
@@ -27,8 +34,8 @@
         </span>
       </div>
 
-      <div id="secondLayer">
-        <h1>Degustation</h1>
+      <div id="secondLayer" class="roundBorder">
+        <div class="titleContainer gouttiere roundBorder"><h1 class="title">Degustation</h1></div>
         <div>
           <span
             >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec
@@ -46,7 +53,7 @@
         </div>
       </div>
 
-      <div id="thirdLayer">
+      <div id="thirdLayer" class="div">
         <h1>Formulaire</h1>
         <form>
           <div>

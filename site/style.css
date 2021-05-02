@@ -129,51 +129,100 @@ table {
 }
 
 /* Reset CSS */
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 
 body {
-  background-image: url(./img/background-906143_1920.jpg);
+  background-color: black;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  max-width: 768px;
 }
 
 #firstLayer {
   z-index: 1;
-  background-color: rgb(238, 240, 158);
-  opacity: 0.8;
-  border-radius: 20%;
+  background-color:#ffffff;
   padding: 20%;
-  position: relative;
 }
 
 #secondLayer {
   z-index: 2;
   position: relative;
   margin-top: -50px;
-  border-radius: 20%;
   padding: 20%;
-  background-color: rgb(233, 233, 76);
-  opacity: 0.8;
+  background-color: #fffdd9;
 }
 
 #thirdLayer {
   z-index: 3;
-  background-color: rgb(238, 240, 158);
+  background-color:#ffffff;
   margin-top: -50px;
-  border-radius: 20%;
   padding: 20%;
   position: relative;
-  opacity: 0.8;
 }
 
-header > div > img {
-  height: 200px;
+#logo{
+  margin: 10%;
 }
 
-header {
-  width: 100%;
-}
 
 header > div {
-  width: 100%;
   background-image: url(./img/background-906143_1920.jpg);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background: white;
+  width: 90%;
+  height: 55%;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 692px;
+  width: 519px;
+}
+
+.roundBorder{
+  border-radius: 24.38%;
+}
+
+.citronBackground{
+  background-image: url(./img/background-906143_1920.jpg);
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+
+#arrow{
+  width: 25%;
+}
+
+main{
+  width: 519px;
+}
+
+main>div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+div>span{
+  text-align: center;
+}
+
+.titleContainer{
+  border:2px solid black;
+  background-color: yellow;
+  min-height: 70px;
+  width: 80%;
+}
+
+.title{
+  font-family: 'Rock Salt', cursive;
+}
+
+.gouttiere{
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
