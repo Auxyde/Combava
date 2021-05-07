@@ -14,14 +14,16 @@
   </head>
   <body>
 
-    <header class="citronBackground">
+    <header>
       <div id="divLogo"class="roundBorder gouttiere"><img id="logo" src="./img/logo_Davids.svg" alt="" /></div>
-      <img id="arrow" class="gouttiere" src="./img/double_fleche.png" alt="arrow"/>
+      <div class="citronBackground">
+       <img id="arrow" class="gouttiere" src="./img/double_fleche.png" alt="arrow"/>
+      </div>
     </header>
 
 
-    <main">
-        <div id="firstLayer" class="card white centerTitleCard">
+    <main>
+        <div id="firstLayer" class="card white centerTitleCard roundBorder">
           <div class="titleContainer roundBorder"><h1 class="title">Presentation</h1></div>
           <span class="gouttiere">
           Aliquam eget nisi convallis, gravida arcu eget, maximus tellus.
@@ -35,7 +37,7 @@
 
 
 
-      <div id="secondLayer" class="card wheat centerTitleCard">
+      <div id="secondLayer" class="card wheat centerTitleCard roundBorder">
         <div class="titleContainer roundBorder titleTransitor"><h1 class="title">Dégustation</h1></div>
         <div>
           <span
@@ -57,23 +59,27 @@
 
       
       
-      <div id="thirdLayer" class="lastCard white centerTitleCard">
+      <div id="thirdLayer" class="lastCard white centerTitleCard roundBorder">
         <div class="titleContainer roundBorder titleTransitor"><h1 class="title">Formulaire</h1></div>
         <form>
           <div>
             <label for="firstName">Prenom :</label>
+            <br>
             <input type="text" name="firstName" />
           </div>
           <div>
             <label for="nom">Nom : </label>
+            <br>
             <input type="text" name="nom" />
           </div>
           <div>
             <label for="mail">Email :</label>
+            <br>
             <input type="email" name="mail" />
           </div>
           <div>
             <label for="tel">Téléphone : </label>
+            <br>
             <input type="tel" name="tel" />
           </div>
           <!--On intègrera ici google map tmtc-->
@@ -88,14 +94,20 @@
           <span>Site de Combava</span>
           <img id="arrowLeft" src="./img/double_fleche.png" alt="arrow"/>
         </a>
-          <div>
-            <p>Rejoignez-nous sur nos résaux sociaux !</p>
+        <div>
+        <p>Rejoignez-nous sur nos résaux sociaux !</p>
+          <div id="links">
             <a href="" target="_blank"><img src="img/facebook-t65.png" alt="logo Facebook"></a>
             <a href="" target="_blank"><img src="img/twitter-t65.png " alt="logo Twitter"></a>
             <a href="" target="_blank"><img src="img/instagram-t65.png" alt="logo instagram-t65"></a>
           </div>
+        </div>
       </div>
         
     </main>
   </body>
+
+  <footer>
+    <div><img src="./img/background-906143_1920.jpg" alt="" /></div>
+  </footer>
 </html>
