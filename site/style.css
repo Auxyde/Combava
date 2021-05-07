@@ -189,7 +189,7 @@ header{
 }
 
 .citronBackground{
-  background-image: url(./img/background-906143_1920.jpg);
+  background-image: url(./img/background-728.jpg);
   background-size:100% 100%;
   background-repeat: no-repeat;
 }
@@ -220,6 +220,7 @@ div>span{
 
 .title{
   font-family: 'Rock Salt', cursive;
+  text-align: center;
 }
 
 .gouttiere{
