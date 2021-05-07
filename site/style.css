@@ -141,16 +141,17 @@ body {
 }
 
 #firstLayer {
-
   z-index: 1;
-  padding: 5rem 5% 5rem 5%;
 }
 
 #secondLayer {
+  transform: translate(0, -10rem);
   z-index: 2;
 }
 
 #thirdLayer {
+  transform: translate(0, -15rem);
+  margin-bottom: -15rem; /*Pour compenser les 15 rem d'au dessus*/
   z-index: 3;
 }
 
@@ -158,14 +159,27 @@ main>div.card, main>div.lastCard{
   margin-top: -6rem;
 }
 
+.centerTitleCard{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .card{
   width: 90%;
   border-radius: 5rem 5rem 0rem 0rem;
   padding: 5rem 5% 10rem 5%;
 }
+
+.card>div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .lastCard{
   width: 90%;
-  padding: 5rem 5% 10rem 5%;
+  padding: 5rem 5% 0rem 5%;
   border-radius: 5rem 5rem 0rem 0rem;
 }
 main{
@@ -178,7 +192,7 @@ main{
 main>div{
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  align-items: center;
 }
 
 /******************** Button To Combava ***********/
@@ -190,7 +204,8 @@ main>div{
 }
 
 #arrowRight{
-  height: 8vh;
+  height: 3rem;
+  width: 3rem;
   transform: rotate(-90deg);
   z-index: 2;
 }

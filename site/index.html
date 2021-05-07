@@ -12,20 +12,16 @@
   </style>  
 <title>David's Lemonade</title>
   </head>
-
   <body>
 
-
     <header class="citronBackground">
-      <!--J'imagine qu'ici ce sont deux images par contre pour les background avec les citrons au début aucune idée à part de faire des divs-->
       <div id="divLogo"class="roundBorder gouttiere"><img id="logo" src="./img/logo_Davids.svg" alt="" /></div>
       <img id="arrow" class="gouttiere" src="./img/double_fleche.png" alt="arrow"/>
     </header>
 
 
-
-    <main class="gouttiere">
-        <div id="firstLayer" class="card white">
+    <main">
+        <div id="firstLayer" class="card white centerTitleCard">
           <div class="titleContainer roundBorder"><h1 class="title">Presentation</h1></div>
           <span class="gouttiere">
           Aliquam eget nisi convallis, gravida arcu eget, maximus tellus.
@@ -39,7 +35,7 @@
 
 
 
-      <div id="secondLayer" class="card wheat">
+      <div id="secondLayer" class="card wheat centerTitleCard">
         <div class="titleContainer roundBorder titleTransitor"><h1 class="title">Dégustation</h1></div>
         <div>
           <span
@@ -61,7 +57,7 @@
 
       
       
-      <div id="thirdLayer" class="lastCard white">
+      <div id="thirdLayer" class="lastCard white centerTitleCard">
         <div class="titleContainer roundBorder titleTransitor"><h1 class="title">Formulaire</h1></div>
         <form>
           <div>
@@ -85,19 +81,20 @@
             <label for="infos">Recevoir des informations ? </label>
             <input type="checkbox" name="recevoir des informations ?" />
           </div>
-          <a id="buttonContainer" class="gouttiere" href="#">
-            <img id="arrowRight" src="./img/double_fleche.png" alt="arrow"/>
-            <span>Site de Combava</span>
-            <img id="arrowLeft" src="./img/double_fleche.png" alt="arrow"/>
-          </a>
         </form>
-
+        
+        <a id="buttonContainer" class="gouttiere" href="#" target="_blank">
+          <img id="arrowRight" src="./img/double_fleche.png" alt="arrow"/>
+          <span>Site de Combava</span>
+          <img id="arrowLeft" src="./img/double_fleche.png" alt="arrow"/>
+        </a>
           <div>
             <p>Rejoignez-nous sur nos résaux sociaux !</p>
-            <a href=""><img src="img/facebook-t65.png" alt="logo Facebook"></a>
-            <a href=""><img src="img/twitter-t65.png " alt="logo Twitter"></a>
-            <a href="" ><img src="img/instagram-t65.png" alt="logo instagram-t65"></a>
+            <a href="" target="_blank"><img src="img/facebook-t65.png" alt="logo Facebook"></a>
+            <a href="" target="_blank"><img src="img/twitter-t65.png " alt="logo Twitter"></a>
+            <a href="" target="_blank"><img src="img/instagram-t65.png" alt="logo instagram-t65"></a>
           </div>
+      </div>
         
     </main>
   </body>
