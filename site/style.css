@@ -131,9 +131,23 @@ table {
 /* Reset CSS */
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 
+
+/**************** Footer       ***************/
+
+footer{
+  z-index: 5;
+}
+
+footer>div>img{
+  width: 100%;
+  margin-top: -5rem;
+}
+
+/*//////////////////////////////////////////*/
+
 /**************** Main Content ***************/
 body {
-  background-color: wheat;
+  background-color: #f3e7e1;
   opacity: 0.9;
   display: flex;
   flex-direction: column;
@@ -155,10 +169,6 @@ body {
   z-index: 3;
 }
 
-main>div.card, main>div.lastCard{
-  margin-top: -6rem;
-}
-
 .centerTitleCard{
   display: flex;
   flex-wrap: wrap;
@@ -167,7 +177,6 @@ main>div.card, main>div.lastCard{
 
 .card{
   width: 90%;
-  border-radius: 5rem 5rem 0rem 0rem;
   padding: 5rem 5% 10rem 5%;
 }
 
@@ -180,25 +189,28 @@ main>div.card, main>div.lastCard{
 .lastCard{
   width: 90%;
   padding: 5rem 5% 0rem 5%;
-  border-radius: 5rem 5rem 0rem 0rem;
 }
+
 main{
-  width: inherit;
+  margin-bottom: -8rem;
+}
+
+#thirdLayer:last-child{
+  margin-bottom: -2rem;
+}
+
+#links{
   display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
-}
-main>div{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  padding-bottom: 1rem;
 }
 
 /******************** Button To Combava ***********/
 
 #arrowLeft{
-  height: 8vh;
+  height: 3rem;
+  width: 3rem;
   z-index: 2;;
   transform: rotate(90deg);
 }
@@ -225,6 +237,8 @@ main>div{
   background: #BFB500;
   padding: 1rem;
   border-radius: 3rem;
+  border: 3px solid black
+  ;
 }
 /*///////////////////////////////////////////////////*/
 div>span{
@@ -258,7 +272,6 @@ header{
 }
 
 header > div {
-  border-radius: 5rem;
   background-image: url(./img/background-906143_1920.jpg);
   background-size: cover;
   display: flex;
@@ -272,6 +285,7 @@ header > div {
 
 
 .citronBackground{
+  width: 100%;
   background-image: url(./img/background-906143_1920.jpg);
   background-size:100% 100%;
   background-repeat: no-repeat;
@@ -293,14 +307,12 @@ header > div {
   margin-bottom: 7rem;
 }
 
-input{
-  width: 5rem;
-  line-height: 2rem;
-}
 
 form>div{
-  display: grid;
-  grid: 50% 50% / 50% 50%;
+  height: 3.5rem;
+}
+form>div>label{
+  line-height: 25px;;
 }
 .white{
   background: rgb(255, 255, 255);
@@ -319,6 +331,10 @@ form>div{
   align-items: center;
   justify-content: center;
   border-radius: 1.5rem;
+}
+
+.roundBorder{
+  border-radius: 5rem 5rem 5rem 5rem;
 }
 
 /*//////////////////////////////////*/
