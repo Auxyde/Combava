@@ -14,17 +14,21 @@
   </head>
 
   <body>
+
+
     <header class="citronBackground">
       <!--J'imagine qu'ici ce sont deux images par contre pour les background avec les citrons au début aucune idée à part de faire des divs-->
       <div class="roundBorder gouttiere"><img id="logo" src="./img/logo_Davids.svg" alt="" /></div>
       <img id="arrow" src="./img/double_fleche.png" alt="arrow"/>
+      <div class="gouttiere"></div>
     </header>
 
+    <div class="transitor"></div>
+
     <main>
-      <div style="position :absolute; background-image:url('./img/background-906143_1920.jpg'); width: inherit; height: 25%; z-index: -1;"></div>
-      <div id="firstLayer" class="roundBorder">
-        <div class="titleContainer roundBorder gouttiere"><h1 class="title">Presentation</h1></div>
-        <span
+        <div id="firstLayer" class="card">
+          <div class="titleContainer roundBorder"><h1 class="title">Presentation</h1></div>
+          <span
           >Aliquam eget nisi convallis, gravida arcu eget, maximus tellus.
           Maecenas ut maximus orci, sed finibus purus. Quisque dignissim egestas
           felis, ac rutrum dolor pulvinar at. Duis nec velit semper, facilisis
@@ -34,8 +38,9 @@
         </span>
       </div>
 
-      <div id="secondLayer" class="roundBorder">
-        <div class="titleContainer gouttiere roundBorder"><h1 class="title">Degustation</h1></div>
+
+
+      <div id="secondLayer" class="card">
         <div>
           <span
             >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec
@@ -53,8 +58,9 @@
         </div>
       </div>
 
-      <div id="thirdLayer" class="div">
-        <h1>Formulaire</h1>
+
+      <div class="titleContainer roundBorder"><h1 class="title">Formulaire</h1></div>
+      <div id="thirdLayer" class="lastCard">
         <form>
           <div>
             <label for="firstName">Prenom :</label>

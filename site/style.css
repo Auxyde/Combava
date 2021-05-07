@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerwebxcom/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -132,39 +132,36 @@ table {
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 
 body {
-  background-color: black;
+  background-color: wheat;
+  opacity: 0.9;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 768px;
 }
 
 #firstLayer {
   z-index: 1;
   background-color:#ffffff;
-  padding: 20%;
 }
 
 #secondLayer {
   z-index: 2;
-  position: relative;
-  margin-top: -50px;
-  padding: 20%;
   background-color: #fffdd9;
 }
 
 #thirdLayer {
   z-index: 3;
   background-color:#ffffff;
-  margin-top: -50px;
-  padding: 20%;
-  position: relative;
+  padding: 5rem;
+}
+
+main>div.card, main>div.lastCard{
+  margin-top: -6rem;
 }
 
 #logo{
   margin: 10%;
 }
-
 
 header > div {
   background-image: url(./img/background-906143_1920.jpg);
@@ -173,19 +170,24 @@ header > div {
   align-content: center;
   background: white;
   width: 90%;
-  height: 55%;
+  height: 100%;
+  position: relative;
 }
 
 header{
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 692px;
-  width: 519px;
 }
 
-.roundBorder{
-  border-radius: 24.38%;
+.card{
+  border-radius: 5rem 5rem 0rem 0rem;
+  padding: 5rem 5rem 10rem 5rem;
+}
+
+.lastCard{
+  width: calc(100% - 10rem);
+  border-radius: 5rem;
 }
 
 .citronBackground{
@@ -196,10 +198,6 @@ header{
 
 #arrow{
   width: 25%;
-}
-
-main{
-  width: 519px;
 }
 
 main>div{
@@ -215,7 +213,12 @@ div>span{
   border:2px solid black;
   background-color: yellow;
   min-height: 70px;
-  width: 80%;
+  min-width: fit-content;
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.5rem;
 }
 
 .title{
@@ -225,4 +228,42 @@ div>span{
 .gouttiere{
   margin-top: 10%;
   margin-bottom: 10%;
+}
+
+input{
+  width: 10rem;
+  line-height: 2rem;
+}
+
+form>div{
+  display: grid;
+  grid: 50% 50% / 50% 50%;
+}
+
+.transitor{
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  z-index: -2;
+  transform: translate(0rem, 200rem);
+  background-color: wheat;
+}
+
+.titleTransitor{
+  position: absolute;
+  z-index: 3;
+  transform: translate(0rem, -30vh);
+}
+main{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.white{
+  background: rgb(255, 255, 255);
+}
+
+.wheat{
+  background:#fffdd9;
 }
