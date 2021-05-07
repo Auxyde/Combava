@@ -226,3 +226,10 @@ div>span{
   margin-top: 10%;
   margin-bottom: 10%;
 }
+
+#bouttonCombava{
+  background: rgba(191, 181, 0, 0.69);
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  border-radius: 25px;
+}
