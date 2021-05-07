@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -18,18 +18,17 @@
 
     <header class="citronBackground">
       <!--J'imagine qu'ici ce sont deux images par contre pour les background avec les citrons au début aucune idée à part de faire des divs-->
-      <div class="roundBorder gouttiere"><img id="logo" src="./img/logo_Davids.svg" alt="" /></div>
-      <img id="arrow" src="./img/double_fleche.png" alt="arrow"/>
-      <div class="gouttiere"></div>
+      <div id="divLogo"class="roundBorder gouttiere"><img id="logo" src="./img/logo_Davids.svg" alt="" /></div>
+      <img id="arrow" class="gouttiere" src="./img/double_fleche.png" alt="arrow"/>
     </header>
 
-    <div class="transitor"></div>
 
-    <main>
-        <div id="firstLayer" class="card">
+
+    <main class="gouttiere">
+        <div id="firstLayer" class="card white">
           <div class="titleContainer roundBorder"><h1 class="title">Presentation</h1></div>
-          <span
-          >Aliquam eget nisi convallis, gravida arcu eget, maximus tellus.
+          <span class="gouttiere">
+          Aliquam eget nisi convallis, gravida arcu eget, maximus tellus.
           Maecenas ut maximus orci, sed finibus purus. Quisque dignissim egestas
           felis, ac rutrum dolor pulvinar at. Duis nec velit semper, facilisis
           orci ac, feugiat nisi. Morbi venenatis ultricies felis fringilla
@@ -40,7 +39,8 @@
 
 
 
-      <div id="secondLayer" class="card">
+      <div id="secondLayer" class="card wheat">
+        <div class="titleContainer roundBorder titleTransitor"><h1 class="title">Dégustation</h1></div>
         <div>
           <span
             >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec
@@ -59,8 +59,10 @@
       </div>
 
 
-      <div class="titleContainer roundBorder"><h1 class="title">Formulaire</h1></div>
-      <div id="thirdLayer" class="lastCard">
+      
+      
+      <div id="thirdLayer" class="lastCard white">
+        <div class="titleContainer roundBorder titleTransitor"><h1 class="title">Formulaire</h1></div>
         <form>
           <div>
             <label for="firstName">Prenom :</label>
@@ -83,17 +85,20 @@
             <label for="infos">Recevoir des informations ? </label>
             <input type="checkbox" name="recevoir des informations ?" />
           </div>
-          <div>
-              <button id="bouttonCombava" href="http://combava.com/" onclick="">Site Combava</button>
-          </div>
+          <a id="buttonContainer" class="gouttiere" href="#">
+            <img id="arrowRight" src="./img/double_fleche.png" alt="arrow"/>
+            <span>Site de Combava</span>
+            <img id="arrowLeft" src="./img/double_fleche.png" alt="arrow"/>
+          </a>
+        </form>
+
           <div>
             <p>Rejoignez-nous sur nos résaux sociaux !</p>
             <a href=""><img src="img/facebook-t65.png" alt="logo Facebook"></a>
             <a href=""><img src="img/twitter-t65.png " alt="logo Twitter"></a>
             <a href="" ><img src="img/instagram-t65.png" alt="logo instagram-t65"></a>
           </div>
-        </form>
-      </div>
+        
     </main>
   </body>
 </html>
