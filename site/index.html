@@ -15,9 +15,11 @@
   <body>
 
     <header>
-      <div id="divLogo"class="roundBorder gouttiere"><img id="logo" src="./img/logo_Davids.svg" alt="" /></div>
+      <div id="divLogo"class="roundBorder gouttiere">
+        <img id="logo" src="./img/logo_Davids.svg" alt="" />
+      </div>
       <div class="citronBackground">
-       <img id="arrow" class="gouttiere" src="./img/double_fleche.png" alt="arrow"/>
+        <img id="arrow" class="gouttiere" src="./img/double_fleche.png" alt="arrow"/>
       </div>
     </header>
 
@@ -40,19 +42,19 @@
       <div id="secondLayer" class="card wheat centerTitleCard roundBorder">
         <div class="titleContainer roundBorder titleTransitor"><h1 class="title">Dégustation</h1></div>
         <div>
-          <span
+          <span class="gouttiere"
             >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec
             metus turpis. Cras non elit sed quam egestas feugiat. Sed sed
             vehicula risus. Morbi ornare nulla ac arcu auctor, ut ultricies
             dolor rhoncus. Nam ultricies augue vitae lectus blandit, in posuere
             nisl porta. Duis egestas semper faucibus. Praesent rhoncus quis.
           </span>
-          <img src="./img/istockphoto-1148520760-612x612.jpg"  width="250" height="150"/>
-          <span
+          <img class="imgDegustation" src="./img/istockphoto-1148520760-612x612.jpg"  width="250" height="150"/>
+          <span class="gouttiere"
             >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
             lorem ex, finibus ut molestie in, consectetur eget elit. Donec quis.
           </span>
-          <img src="./img/istockphoto-699190256-612x612.jpg" width="250" height="150" />
+          <img class="imgDegustation" src="./img/istockphoto-699190256-612x612.jpg" width="250" height="150" />
         </div>
       </div>
 
@@ -61,7 +63,7 @@
       
       <div id="thirdLayer" class="lastCard white centerTitleCard roundBorder">
         <div class="titleContainer roundBorder titleTransitor"><h1 class="title">Formulaire</h1></div>
-        <form>
+        <form class="gouttiere">
           <div>
             <label for="firstName">Prenom :</label>
             <br>
@@ -84,8 +86,8 @@
           </div>
           <!--On intègrera ici google map tmtc-->
           <div>
-            <label for="infos">Recevoir des informations ? </label>
             <input type="checkbox" name="recevoir des informations ?" />
+            <label for="infos">Recevoir des informations par mail ? </label>
           </div>
         </form>
         
