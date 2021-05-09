@@ -6,14 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
-  </style>  
-<title>David's Lemonade</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <title>David's Lemonade</title>
+    <meta name="description" content="Site officiel de David's Limonade">
   </head>
-  <body>
 
+
+  <body>
     <header>
       <div id="divLogo"class="roundBorder gouttiere">
         <img id="logo" src="./img/logo_Davids.svg" alt="logo David's Limonade" />
@@ -26,12 +25,13 @@
 
 
     <main>
-        <div id="firstLayer" class="card white centerTitleCard roundBorder">
-          <div class="titleContainer roundBorder">
-            <h1 class="title">Presentation</h1></div>
-            <p class="gouttiere">
-              Notre association, Combava, regroupe de nombreux producteurs indépendants d’agrumes en provenance de tout le sud de la France. Notre but est d’assurer une liaison directe entre nos consommateurs et les producteurs. Depuis des années, Nous assurons ainsi une grande variété de produits à base d’agrume, et en particulier notre produit phare, la citronnade. Tous nos produits sont issus d’une agriculture bio et locale, en adéquation avec les valeurs de notre association. C’est d'ailleurs en écho à notre volonté de promouvoir des produits faits à la main et sains que le design de ce site web fait régulièrement référence à la célèbre marque "David’s Limonade", pionnière dans ces domaines.
-            </p>
+      <div id="firstLayer" class="card white centerTitleCard roundBorder">
+        <div class="titleContainer roundBorder">
+          <h1 class="title">Presentation</h1>
+        </div>
+          <p class="gouttiere">
+            Notre association, Combava, regroupe de nombreux producteurs indépendants d’agrumes en provenance de tout le sud de la France. Notre but est d’assurer une liaison directe entre nos consommateurs et les producteurs. Depuis des années, Nous assurons ainsi une grande variété de produits à base d’agrume, et en particulier notre produit phare, la citronnade. Tous nos produits sont issus d’une agriculture bio et locale, en adéquation avec les valeurs de notre association. C’est d'ailleurs en écho à notre volonté de promouvoir des produits faits à la main et sains que le design de ce site web fait régulièrement référence à la célèbre marque "David’s Limonade", pionnière dans ces domaines.
+          </p>
       </div>
 
       <img id="transitionLayer" class="centerTitleCard " src="img/background-original-citrons-seuls.jpg" alt="image de transition entre les couches">
@@ -41,12 +41,12 @@
           <h1 class="title">Dégustation</h1>
         </div>
         <div>
-          <p class="gouttiere"
-            >En l’honneur de nos produits et de nos clients, nous organisons des dégustations VIP. Ces dégustations ont lieu dans tout le pays via nos nombreux magasins partenaires. Durant ces dégustations, vous pourrez goûter à notre meilleur produit, à savoir notre citronnade. La totalité des fruits qui la composent sont bio et issus d’une agriculture durable, garantissant un produit frais, sain et revigorant.
+          <p class="gouttiere">
+            En l’honneur de nos produits et de nos clients, nous organisons des dégustations VIP. Ces dégustations ont lieu dans tout le pays via nos nombreux magasins partenaires. Durant ces dégustations, vous pourrez goûter à notre meilleur produit, à savoir notre citronnade. La totalité des fruits qui la composent sont bio et issus d’une agriculture durable, garantissant un produit frais, sain et revigorant.
             <br>
             <br>
             Pour participer à ces dégustations, nous vous invitons à renseigner le formulaire ci-dessous.            
-        </p>
+          </p>
           <img class="imgDegustation" src="./img/istockphoto-1148520760-612x612.jpg" />
           <p class="gouttiere">
             Lors de ces évènements, nous vous proposons de venir déguster nos citronnades, mais aussi de discuter avec les producteurs locaux. En effet, contrairement aux grandes multinationales, nous sommes une association à taille humaine, qui se préoccupe aussi bien de ses clients que de ses producteurs.
@@ -62,45 +62,116 @@
         <div class="titleContainer roundBorder titleTransitor">
           <h1 class="title">Formulaire</h1>
         </div>
-        <form class="gouttiere" id="informations">
-          <label class="formLabel">Prénom:</label>
-          <input type="text" name="firstName" placeholder="Prénom :" />
-          <label class="formLabel">Nom:</label>
-          <input type="text" name="nom" placeholder="Nom :" />
-          <label class="formLabel">Email:</label>
-          <input type="email" name="mail" placeholder="Email :" />
-          <label class="formLabel">Téléphone:</label>
-          <input type="tel" name="tel" placeholder="Téléphone :"/>
-          <!--On intègrera ici google map tmtc-->
-        </form>
+        <form>
+          <div id="informations" class="gouttiere">
+            <label class="formLabel">Prénom:</label>
+            <input id="prenom" type="text" name="Prenom" placeholder="Prénom" required>
+            <label class="formLabel">Nom:</label>
+            <input id="nom" type="text" name="nom" placeholder="Nom" required>
+            <label class="formLabel">Email:</label>
+            <input type="email" class="bigcase" name="e-mail" placeholder="Adresse Mail" required>
+            <label class="formLabel">Téléphone:</label>
+            <input type="text" class="bigcase" name="tel" placeholder="N° de téléphone" required>
+          </div><!--On intègrera ici google map tmtc-->
 
-        <form id="mailInfos">
-          <input type="checkbox" name="recevoir des informations ?" />
-          <label for="infos">Recevoir des informations ? </label>
-        </form>
-        
-        <a id="buttonContainer" class="gouttiere" href="http://combava.com/">
-          <img id="arrowRight" src="./img/double_fleche.png" alt="flèche droite"/>
-          <span>Site de Combava</span>
-          <img id="arrowLeft" src="./img/double_fleche.png" alt="flèche gauche"/>
-        </a>
-        <div>
-          <p>Rejoignez-nous sur nos réseaux sociaux !</p>
-        <br>
-          <div id="links">
-            <a href="#" target="_blank"><img src="img/facebook-t65.png" alt="logo Facebook"></a>
-            <a href="#" target="_blank"><img src="img/twitter-t65.png " alt="logo Twitter"></a>
-            <a href="#" target="_blank"><img src="img/instagram-t65.png" alt="logo instagram"></a>
+          <div id="map1" class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2743.0965512703297!2d0.33913125145670314!3d46.56555596719674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fdbe45d8f4987d%3A0x2d6462b5a1af018a!2sAssociation%20pour%20le%20Maintien%20d%E2%80%99une%20Agriculture%20Paysanne%20les%20Grand%E2%80%99Goules!5e0!3m2!1sfr!2sfr!4v1620581945444!5m2!1sfr!2sfr" allowfullscreen="" loading="lazy"></iframe>
+            <div>
+              
+            </div>
+            <p><strong>Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur adip  Lorem ipsum dolor sit amet, consectetur adip </strong></p>
+          </div><br><br>
+
+          <select required>
+            <option value="" selected="selected">-Événement-</option>
+            <option>AMAP les Grand’Goules</option>
+            <option>Naturéo</option>
+            <option>AMAP BIO’RILLAC</option>
+            <option>AMAP Bio des 2 rives</option>
+            <option>Le Pompin'Ambour</option>
+            <option>Amap des Voiliers</option>
+            <option>Bio &amp; Sens Montpellier - Juvignac</option>
+            <option>AMAP</option>
+            <option>La Canopée</option>
+            <option>Pensees Bio</option>
+            <option>BIOMONDE</option>
+            <option>Biossetan</option>
+            <option>Rayons Verts</option>
+            <option>Les Comptoirs de la Bio</option>
+            <option>Bio c' Bon</option>  
+          </select>
+            
+          
+
+          <div class="checkbox">
+            <input type="checkbox" name="recevoir des informations ?"/>
+            <label for="infos">Recevoir des informations sur l'évènement ? </label>
           </div>
+
+          <div class="checkbox">
+            <input type="checkbox" name="recevoir des informations ?" required/>
+            <label for="infos">Accepter les Conditions Générales d'Utilisations ?</label>
+          </div>
+
+
+          <button type="submit" id="buttonContainer" class="gouttiere" href="#">
+            <img id="arrowRight" for="#buttonContainer" src="./img/double_fleche.png" alt="flèche droite"/>
+            <span>Valider</span>
+            <img id="arrowLeft" src="./img/double_fleche.png" alt="flèche gauche"/>
+          </button>
+
+        </form>
+      </div>
+    </main>
+    
+    <footer>
+      <div>
+        <img src="./img/background-906143_1920.jpg" alt="image de pied de page" />
+        <div id="links">
+          <p>Rejoignez-nous sur nos réseaux sociaux !</p>
+          <br>
+          <a href="#" target="_blank"><img src="img/facebook-t65.png" alt="logo Facebook"></a>
+          <a href="#" target="_blank"><img src="img/twitter-t65.png " alt="logo Twitter"></a>
+          <a href="#" target="_blank"><img src="img/instagram-t65.png" alt="logo instagram"></a>
         </div>
       </div>
-        
-    </main>
+    </footer>
   </body>
 
-  <footer>
-    <div>
-      <img src="./img/background-906143_1920.jpg" alt="image de pied de page" />
-    </div>
-  </footer>
 </html>
+
+
+<!----------------------------------------------------------------
+<form id="inscription">
+  <div class="bigcase">
+      <input id="prenom" type="text" name="Prenom" placeholder="Prénom" required>
+      <input id="nom" type="text" name="nom" placeholder="Nom" required>
+  </div>
+  <input type="email" class="bigcase" name="e-mail" placeholder="Adresse Mail" required>
+  <input type="text" class="bigcase" name="tel" placeholder="N° de téléphone">
+  <select name="eventlist" id="ev" class="bigcase">
+      <option selected="selected">--Événements--</option>
+      <option>AMAP les Grand’Goules</option>
+      <option>AMAP BIO’RILLAC</option>
+      <option>Naturéo</option>
+      <option>AMAP Bio des 2 rives</option>
+      <option>Amap des Voiliers</option>
+      <option>Le Pompin'Ambour</option>
+      <option>AMAP</option>
+      <option>Pensees Bio</option>
+      <option>Bio & Sens Montpellier - Juvignac</option>
+      <option>Biossetan</option>
+      <option>La Canopée</option>
+      <option>Rayons Verts</option>
+      <option>BIOMONDE</option>
+      <option>Bio c' Bon</option>  
+      <option>Les Comptoirs de la Bio</option>
+  </select>
+  <div class="checkbox">
+      <p><input type="checkbox" name="CGU_PDC" required>J'accepte les conditions générales d'utilisations et la politique de confidentialité des données</p>
+  </div>
+  <div class="checkbox">
+      <p><input type="checkbox" name="mailinfo">Recevoir des mails d'information à propos de nos évenements</p>
+  </div>
+  <button type="submit">Valider</button>
+</form>---->

@@ -157,8 +157,8 @@ body {
 }
 
 p{
-  padding-left: 2rem;
-  padding-right: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
   line-height:130%;
 }
 .title{
@@ -317,6 +317,20 @@ display: none;
   justify-content: center;
 }
 
+.map>*{
+  border : 2px black solid;
+  margin : 0px;
+  width: 80vw;
+}
+
+iframe{
+  height: 20rem;
+}
+
+.map{
+  height : fit-content;
+}
+
 .lastCard{
   width: 90%;
   padding: 2rem 5% 0rem 5%;
@@ -326,9 +340,6 @@ main{
   margin-bottom: -8rem;
 }
 
-#thirdLayer:last-child{
-  margin-bottom: -17rem;
-}
 
 #links{
   display: flex;
@@ -358,7 +369,7 @@ main{
 
 form{
   display:flex;
-  justify-content:center;
+  justify-content:space-between;
   flex-direction:column;
   align-items: center;
 }
@@ -367,6 +378,20 @@ form{
   width : 80vw;
   margin : 1em 0em 0em 0em;
   line-height: 2rem;
+}
+
+form>*{
+  width : 80vw;
+}
+
+form>select, form>.checkbox{
+  margin : 1rem 0rem 1rem 0rem;
+}
+
+form>select{
+  width: 80vw;
+  height : 5vh;
+  line-height : 30vh;
 }
 
 input{
@@ -378,6 +403,19 @@ input{
 input[type="checkbox"]{
   width :18px;
   height: 18px;
+}
+
+#informations{
+  margin-bottom: 2rem;
+}
+
+#checkbox{
+  display:grid;
+  grid: 100% / 30% 70%;
+}
+
+#checkbox>label{
+  background-color: #BFB500;
 }
 
 /*//////////////////////////////////*/
@@ -445,7 +483,7 @@ footer>div>img{
   /******************** Generalistics ******************/
 
 body{
-  font-size: 25px;
+  font-size: 21px;
 }
 
 .title{
@@ -530,26 +568,26 @@ div.card#firstLayer{
 /******************** Form ******************/
 
 input{
-  font-size: 25px;
+  font-size: 21px;
 }
 
 #informations > input{
-  margin : 0rem 0rem 1rem 1rem;
+  margin : 0rem 0rem 1rem 0rem;
 }
 
-#informations{
-  display:inline;
-}
 
-#informations>label{
-  margin-left: 1rem;
-  width:5rem;
-}
 
-form>*{
-  margin: 3rem;
+form>#informations{
   line-height: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+form>select{
+  width: 80vw;
   height:3rem;
+  line-height:3rem;
+  font-size: 21px;
 }
 
 input::placeholder{
@@ -569,7 +607,6 @@ input::placeholder{
 #mailInfos{
   margin-bottom : 3rem;
 }
-
 /*/////////////////////////////////////////////*/
 
 /******************** Button Combava ******************/
@@ -596,5 +633,4 @@ footer>div>img{
 }
 
 /*/////////////////////////////////////////////*/
-
 }
