@@ -159,6 +159,7 @@ body {
 p{
   padding-left: 2rem;
   padding-right: 2rem;
+  line-height:130%;
 }
 .title{
   font-family: 'Rock Salt', cursive;
