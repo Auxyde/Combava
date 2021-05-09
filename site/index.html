@@ -61,32 +61,21 @@
       
       <div id="thirdLayer" class="lastCard white centerTitleCard roundBorder">
         <div class="titleContainer roundBorder titleTransitor"><h1 class="title">Formulaire</h1></div>
-        <form class="gouttiere">
-          <div>
-            <label for="firstName">Prenom :</label>
-            <br>
-            <input type="text" name="firstName" />
-          </div>
-          <div>
-            <label for="nom">Nom : </label>
-            <br>
-            <input type="text" name="nom" />
-          </div>
-          <div>
-            <label for="mail">Email :</label>
-            <br>
-            <input type="email" name="mail" />
-          </div>
-          <div>
-            <label for="tel">Téléphone : </label>
-            <br>
-            <input type="tel" name="tel" />
-          </div>
+        <form class="gouttiere" id="informations">
+          <label class="formLabel">Prénom:</label>
+          <input type="text" name="firstName" placeholder="Prénom :" />
+          <label class="formLabel">Nom:</label>
+          <input type="text" name="nom" placeholder="Nom :" />
+          <label class="formLabel">Email:</label>
+          <input type="email" name="mail" placeholder="Email :" />
+          <label class="formLabel">Téléphone:</label>
+          <input type="tel" name="tel" placeholder="Téléphone :"/>
           <!--On intègrera ici google map tmtc-->
-          <div>
-            <input type="checkbox" name="recevoir des informations ?" />
-            <label for="infos">Recevoir des informations par mail ? </label>
-          </div>
+        </form>
+
+        <form id="mailInfos">
+          <input type="checkbox" name="recevoir des informations ?" />
+          <label for="infos">Recevoir des informations ? </label>
         </form>
         
         <a id="buttonContainer" class="gouttiere" href="http://combava.com/">
