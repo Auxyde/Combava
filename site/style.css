@@ -128,38 +128,157 @@ table {
   border-spacing: 0;
 }
 
+
+/********************************************************************************************/
+/**************************************  CODE  ****************************************/
+/********************************************************************************************/
+
+
+
 /* Reset CSS */
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 
+/******************** Generalistics ******************/
 
-/**************** Footer       ***************/
-
-footer{
-  z-index: -5;
-}
-
-footer>div>img{
-  width: 100%;
-  margin-top: -5rem;
-}
-
-#links>a{
-  margin: 10px;
-}
-
-/*//////////////////////////////////////////*/
-
-/**************** Main Content ***************/
 body {
   text-align:justify;
   font-family:Helvetica;
   font-size: 20px;
-  background-color: #ecd3c8;
+  background-color: #F9ECEB;
   opacity: 0.9;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
+.imgDegustation{
+  width: 100%;
+  height: auto;
+}
+
+p{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.title{
+  font-family: 'Rock Salt', cursive;
+  font-size: 24px;
+}
+
+.gouttiere{
+  position: relative;
+  margin-top: 5rem;
+  margin-bottom: 7rem;
+}
+
+.white{
+  background: rgb(255, 255, 255);
+}
+
+.wheat{
+  background:#fffdd9;
+}
+
+.titleContainer{
+  border:2px solid black;
+  background-color: #F8EE02;
+  min-height: 70px;
+  min-width:min-content;
+
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.5rem;
+}
+
+.roundBorder{
+  border-radius: 5rem 5rem 5rem 5rem;
+}
+
+
+  /******** Transitions *********/
+
+    /******** Color changer for transitions *********/
+
+    .transitor{
+      position: absolute;
+      width: 100%;
+      height: 20%;
+      z-index: -100;
+      transform: translate(0rem, 200rem);
+      background-color: wheat;
+    }
+    /*/////////////////////////////////////////////*/
+
+    /******** Titles between transitions *********/
+
+    .titleTransitor{
+      z-index:4;
+      transform: translate(0px, -4rem);
+      position: absolute;
+    }
+
+    /*/////////////////////////////////////////////*/
+
+  /*/////////////////////////////////////////////*/
+
+/*///////////////////////////////////////////////*/
+
+/******************** Header ******************/
+header{
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#arrow{
+  width: 6rem;
+  height: 6rem;
+}
+
+q{
+  display: none;
+  font-style: italic;
+  font-size:60px;
+  font-weight: bold;
+  font-family: 'Rock Salt';
+}
+
+#logo{
+  height: 15rem;
+  width: 15rem;
+  margin: 5rem;
+}
+
+#divLogo{
+  margin-bottom : 0%;
+}
+
+header > div {
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background: white;
+  width: 90%;
+  height: 100%;
+  position: relative;
+}
+
+
+.citronBackground{
+  width: 100%;
+  height: 100%;
+  background-image: url(./img/background-906143_1920.jpg);
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+
+/*///////////////////////////////////////////////*/
+
+/**************** Main Content ***************/
 
 #firstLayer {
   z-index: 1;
@@ -217,8 +336,6 @@ main{
   padding-bottom: 1rem;
 }
 
-
-
 .formLabel{
   visibility: hidden;
 }
@@ -234,9 +351,37 @@ main{
   max-height: 100%;
   background-color: #fdf8d7;
 }
+/*///////////////////////////////////////////////////*/
 
+/******************** Form ******************/
 
-/******************** Button To Combava ***********/
+form{
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+  align-items: center;
+}
+
+#informations>input{
+  width : 80vw;
+  margin : 1em 0em 0em 0em;
+  line-height: 2rem;
+}
+
+input{
+  background:#fdf8d7;
+  outline: none;
+  border: none;
+}
+
+input[type="checkbox"]{
+  width :18px;
+  height: 18px;
+}
+
+/*//////////////////////////////////*/
+
+/******************** Button to Combava ***********/
 
 #arrowLeft{
   height: 3rem;
@@ -271,164 +416,22 @@ main{
 }
 /*///////////////////////////////////////////////////*/
 
+/**************** Footer ***************/
 
-/******************** Header ******************/
-header{
-  width: inherit;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+footer{
+  z-index: -5;
 }
 
-#arrow{
-  width: 6rem;
-  height: 6rem;;
-}
-
-q{
-  display: none;
-  font-style: italic;
-  font-size:60px;
-  font-weight: bold;
-  font-family: 'Rock Salt';
-}
-
-#logo{
-  height: 15rem;
-  width: 15rem;
-  margin: 5rem;
-}
-
-#divLogo{
-  margin-bottom : 0%;
-}
-
-header > div {
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  background: white;
-  width: 90%;
-  height: 100%;
-  position: relative;
-}
-
-
-.citronBackground{
+footer>div>img{
   width: 100%;
-  height: 100%;
-  background-image: url(./img/background-906143_1920.jpg);
-  background-size:100% 100%;
-  background-repeat: no-repeat;
+  margin-top: -5rem;
 }
 
-/*///////////////////////////////////////////////*/
-
-
-
-
-/*** Generalistics ****/
-
-.imgDegustation{
-  width: 100%;
-  height: auto;
+#links>a{
+  margin: 10px;
 }
+/*///////////////////////////////////////////////////*/
 
-p{
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-.title{
-  font-family: 'Rock Salt', cursive;
-  font-size: 24px;
-}
-
-
-
-.gouttiere{
-  position: relative;
-  margin-top: 5rem;
-  margin-bottom: 7rem;
-}
-
-
-form{
-  display:flex;
-  justify-content:center;
-  flex-direction:column;
-  align-items: center;
-}
-
-#informations>input{
-  width : 80vw;
-  margin : 1em 0em 0em 0em;
-  line-height: 2rem;
-}
-
-input{
-  background:#fdf8d7;
-  outline: none;
-  border: none;
-}
-
-input[type="checkbox"]{
-  width :18px;
-  height: 18px;
-}
-
-.white{
-  background: rgb(255, 255, 255);
-}
-
-.wheat{
-  background:#fffdd9;
-}
-.titleContainer{
-  border:2px solid black;
-  background-color: #F8EE02;
-  min-height: 70px;
-  min-width:min-content;
-  max-width: max-content;
-  width: 50vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 1.5rem;
-}
-
-.roundBorder{
-  border-radius: 5rem 5rem 5rem 5rem;
-}
-
-/*//////////////////////////////////*/
-
-
-/******** Transitions *********/
-
-  /******** Color changer for transitions *********/
-
-  .transitor{
-    position: absolute;
-    width: 100%;
-    height: 20%;
-    z-index: -100;
-    transform: translate(0rem, 200rem);
-    background-color: wheat;
-  }
-  /*/////////////////////////////////////////////*/
-
-  /******** Titles between transitions *********/
-
-  .titleTransitor{
-    z-index:4;
-    transform: translate(0px, -4rem);
-    position: absolute;
-  }
-
-  /*/////////////////////////////////////////////*/
-
-/*/////////////////////////////////////////////*/
 
 
 /********************************************************************************************/
@@ -438,6 +441,33 @@ input[type="checkbox"]{
 
 @media screen and (min-width:768px){
 
+  /******************** Generalistics ******************/
+
+body{
+  font-size: 25px;
+}
+
+.title{
+  font-size:30px;
+}
+
+.titleContainer{
+  min-height: 80px;
+  max-width: 35%;
+}
+
+.imgDegustation{
+  max-width: 50vw;
+  height: auto;
+}
+
+.gouttiere{
+  position: relative;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+/*/////////////////////////////////////////////*/
 
 /******************** Header ******************/
 
@@ -447,6 +477,11 @@ header{
   flex-direction: column;
   align-items: center;
   height : 100vh;
+}
+
+header > div {
+  width: 100%;
+  max-height: 70vh;
 }
 
 #logo{
@@ -467,29 +502,6 @@ header{
 .citronBackground>img{
   width: 100%;
 }
-/******************** Generic ******************/
-
-
-body{
-  font-size: 25px;
-}
-
-header > div {
-  width: 100%;
-  max-height: 70vh;
-}
-
-.title{
-  font-size:30px;
-}
-
-.titleContainer{
-  min-height: 80px;
-}
-
-#arrow{
-  display:none;
-}
 
 q{
   text-align: center;
@@ -499,11 +511,21 @@ q{
   
 }
 
-.gouttiere{
-  position: relative;
-  margin-top: 3rem;
-  margin-bottom: 4rem;
+/*/////////////////////////////////////////////*/
+
+
+/******************** Layers & transitions ******************/
+#transitionLayer{
+  display: block;
+  width: 100vw;
 }
+
+div.card#firstLayer{
+  padding: 2rem 5% 0rem 5%;
+}
+
+/*/////////////////////////////////////////////*/
+
 /******************** Form ******************/
 
 input{
@@ -547,7 +569,9 @@ input::placeholder{
   margin-bottom : 3rem;
 }
 
-/******************************** Button ********************************/
+/*/////////////////////////////////////////////*/
+
+/******************** Button Combava ******************/
 
 #buttonContainer{
   width: 20em;
@@ -561,26 +585,15 @@ input::placeholder{
   margin: auto;
 }
 
-/******************************** Layers & transitions *********/
-#transitionLayer{
-  display: block;
-  width: 100vw;
-}
+/*/////////////////////////////////////////////*/
 
-.imgDegustation{
-  max-width: 50vw;
-  height: auto;
-}
-
-div.card#firstLayer{
-  padding: 2rem 5% 0rem 5%;
-}
-
-
-/******************************** Footer ********************************/
+/******************** Footer ******************/
 
 footer>div>img{
   width: 100%;
   margin-top: -30vw;
 }
+
+/*/////////////////////////////////////////////*/
+
 }
