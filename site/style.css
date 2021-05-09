@@ -341,11 +341,11 @@ main{
 }
 
 
-#links{
+.links{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 1rem;
+
 }
 
 .formLabel{
@@ -453,6 +453,25 @@ input[type="checkbox"]{
   border-radius: 3rem;
   border: 3px solid black;
 }
+
+#buttonContainerCombava{
+  line-height: 10px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% - 2rem);
+  background: #f4fc88;
+  padding: 1rem;
+  border-radius: 3rem;
+  border: 3px solid black;
+}
+
+#buttonContainerCombava>span{
+  color: black;
+  font-family: 'Rock Salt', cursive;
+}
+
 /*///////////////////////////////////////////////////*/
 
 /**************** Footer ***************/
@@ -466,7 +485,7 @@ footer>div>img{
   margin-top: -5rem;
 }
 
-#links>a{
+.links>a{
   margin: 10px;
 }
 /*///////////////////////////////////////////////////*/
@@ -510,6 +529,9 @@ body{
 
 /******************** Header ******************/
 
+#arrow{
+  display: none;
+}
 header{
   width: inherit;
   display: flex;
@@ -623,6 +645,17 @@ input::placeholder{
   margin: auto;
 }
 
+#buttonContainerCombava{
+  width: 20em;
+  margin: 5em 5em 5em 5em;
+  min-width: 20em;
+  display: grid;
+  grid: 100% / 25% 50% 25%;
+}
+
+#buttonContainerCombava>*{
+  margin: auto;
+}
 /*/////////////////////////////////////////////*/
 
 /******************** Footer ******************/
