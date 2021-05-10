@@ -317,12 +317,6 @@ display: none;
   justify-content: center;
 }
 
-.map>*{
-  border : 2px black solid;
-  margin : 0px;
-  width: 80vw;
-}
-
 iframe{
   height: 20rem;
 }
@@ -680,7 +674,7 @@ footer>div>img{
 
 .carousel-slide>iframe{
   width:100%;
-  height: 100%;
+  height: 25em;
 }
 
 
@@ -707,8 +701,8 @@ footer>div>img{
 
 .carousel::before,
 .carousel::after,
-.carousel__prev,
-.carousel__next {
+.carousel_prev,
+.carousel_next {
   position: absolute;
   top: 0;
   margin-top: 15rem;
@@ -731,11 +725,11 @@ footer>div>img{
   border: none;
 }
 
-.carousel::before, .carousel__prev {
+.carousel::before, .carousel_prev {
   left: -1rem;
 }
 
-.carousel::after, .carousel__next {
+.carousel::after, .carousel_next {
   right: -1rem;
 }
 
@@ -743,14 +737,13 @@ footer>div>img{
 .carousel::after {
   content: '';
   z-index: 1;
+  background-image: url(../site/img/double_fleche_contour_jaune.png);
   background-color: #fdf8d7;
   background-size: 1.5rem 1.5rem;
   background-repeat: no-repeat;
   background-position: center center;
   color: #fff;
   font-size: 2.5rem;
-  line-height: 4rem;
-  text-align: center;
   pointer-events: none;
 }
 
@@ -758,6 +751,11 @@ footer>div>img{
   box-sizing: border-box;
   scrollbar-color: transparent transparent; /* thumb and track color */
   scrollbar-width: 0px;
+}
+
+.carousel>span{
+  color : black;
+  margin-left: 18%;
 }
 
 .carousel>*::-webkit-scrollbar {
@@ -768,4 +766,21 @@ footer>div>img{
 .carousel>*::-webkit-scrollbar-thumb {
   background: transparent;
   border: none;
+}
+
+.carousel::before{
+  transform: translateY(-50%) rotate(90deg);
+}
+
+.carousel::after{
+  transform: translateY(-50%) rotate(-90deg);
+}
+
+li>div{
+  width:100%;
+  padding-top: 2px;
+}
+
+li>div>span{
+  font-family: 'Rock Salt', cursive;
 }
