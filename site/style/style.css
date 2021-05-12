@@ -1,0 +1,786 @@
+/* http://meyerwebxcom/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/********************************************************************************************/
+/**************************************  CODE  ****************************************/
+/********************************************************************************************/
+
+
+
+/* Reset CSS */
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+/******************** Generalistics ******************/
+
+body {
+  text-align:justify;
+  font-family:Helvetica;
+  font-size: 20px;
+  background-color: #F9ECEB;
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.imgDegustation{
+  width: 100%;
+  height: auto;
+}
+
+p{
+  margin-left: 2rem;
+  margin-right: 2rem;
+  line-height:130%;
+}
+.title{
+  font-family: 'Rock Salt', cursive;
+  font-size: 24px;
+}
+
+.gouttiere{
+  position: relative;
+  margin-top: 5rem;
+  margin-bottom: 7rem;
+}
+
+.white{
+  background: rgb(255, 255, 255);
+}
+
+.wheat{
+  background:#fffdd9;
+}
+
+.titleContainer{
+  border:2px solid black;
+  background-color: #F8EE02;
+  min-height: 70px;
+  min-width:min-content;
+
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.5rem;
+}
+
+.roundBorder{
+  border-radius: 5rem 5rem 5rem 5rem;
+}
+
+
+  /******** Transitions *********/
+
+    /******** Color changer for transitions *********/
+
+    .transitor{
+      position: absolute;
+      width: 100%;
+      height: 20%;
+      z-index: -100;
+      transform: translate(0rem, 200rem);
+      background-color: wheat;
+    }
+    /*/////////////////////////////////////////////*/
+
+    /******** Titles between transitions *********/
+
+    .titleTransitor{
+      z-index:4;
+      transform: translate(0px, -4rem);
+      position: absolute;
+    }
+
+    /*/////////////////////////////////////////////*/
+
+  /*/////////////////////////////////////////////*/
+
+/*///////////////////////////////////////////////*/
+
+/******************** Header ******************/
+header{
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#arrow{
+  width: 6rem;
+  height: 6rem;
+}
+
+q{
+  display: none;
+  font-style: italic;
+  font-size:60px;
+  font-weight: bold;
+  font-family: 'Rock Salt';
+}
+
+#logo{
+  height: 15rem;
+  width: 15rem;
+  margin: 5rem;
+}
+
+#divLogo{
+  margin-bottom : 0%;
+}
+
+header > div {
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background: white;
+  width: 90%;
+  height: 100%;
+  position: relative;
+}
+
+
+.citronBackground{
+  width: 100%;
+  height: 100%;
+  background-image: url(./img/background-906143_1920.jpg);
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+
+/*///////////////////////////////////////////////*/
+
+/**************** Main Content ***************/
+
+#firstLayer {
+  z-index: 1;
+}
+
+#transitionLayer{
+display: none;
+}
+
+#secondLayer {
+  transform: translate(0, -15rem);
+  z-index: 2;
+}
+
+#thirdLayer {
+  transform: translate(0, -25rem);
+  margin-bottom: -15rem; /*Pour compenser les 15 rem d'au dessus*/
+  z-index: 3;
+}
+
+.centerTitleCard{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card{
+  width: 90%;
+  padding: 2rem 5% 15rem 5%;
+}
+
+.card>div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+iframe{
+  height: 20rem;
+}
+
+.map{
+  height : fit-content;
+}
+
+.lastCard{
+  width: 90%;
+  padding: 2rem 5% 0rem 5%;
+}
+
+main{
+  margin-bottom: -8rem;
+}
+
+
+.links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.formLabel{
+  visibility: hidden;
+}
+
+#mailInfos{
+  display: flex;
+  flex-direction: row;
+  height:5vh;
+  line-height : 5vh;
+  border: 1px solid black;
+}
+#mailInfos>label{
+  max-height: 100%;
+  background-color: #fdf8d7;
+}
+/*///////////////////////////////////////////////////*/
+
+/******************** Form ******************/
+
+form{
+  display:flex;
+  justify-content:space-between;
+  flex-direction:column;
+  align-items: center;
+}
+
+#informations>input{
+  width : 80vw;
+  margin : 1em 0em 0em 0em;
+  line-height: 2rem;
+}
+
+form>*{
+  width : 80vw;
+}
+
+form>select, form>.checkbox{
+  margin : 1rem 0rem 1rem 0rem;
+}
+
+form>select{
+  width: 80vw;
+  height : 5vh;
+  line-height : 30vh;
+}
+
+input{
+  background:#fdf8d7;
+  outline: none;
+  border: none;
+}
+
+input[type="checkbox"]{
+  width :18px;
+  height: 18px;
+}
+
+#informations{
+  margin-bottom: 2rem;
+}
+
+#checkbox{
+  display:grid;
+  grid: 100% / 30% 70%;
+}
+
+#checkbox>label{
+  background-color: #BFB500;
+}
+
+/*//////////////////////////////////*/
+
+/******************** Button to Combava ***********/
+
+#arrowLeft{
+  height: 3rem;
+  width: 3rem;
+  z-index: 2;
+  transform: rotate(90deg);
+}
+
+#arrowRight{
+  height: 3rem;
+  width: 3rem;
+  transform: rotate(-90deg);
+  z-index: 2;
+}
+
+#buttonContainer>span{
+  color: white;
+  font-family: 'Rock Salt', cursive;
+}
+
+#buttonContainer{
+  line-height: 10px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% - 2rem);
+  background: #BFB500;
+  padding: 1rem;
+  border-radius: 3rem;
+  border: 3px solid black;
+}
+
+#buttonContainerCombava{
+  line-height: 10px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% - 2rem);
+  background: #f4fc88;
+  padding: 1rem;
+  border-radius: 3rem;
+  border: 3px solid black;
+}
+
+#buttonContainerCombava>span{
+  color: black;
+  font-family: 'Rock Salt', cursive;
+}
+
+/*///////////////////////////////////////////////////*/
+
+/**************** Footer ***************/
+
+footer{
+  z-index: -5;
+}
+
+footer>div>img{
+  width: 100%;
+  margin-top: -5rem;
+}
+
+.links>a{
+  margin: 10px;
+}
+/*///////////////////////////////////////////////////*/
+
+
+
+/********************************************************************************************/
+/**************************************  BREAKPOINT  ****************************************/
+/********************************************************************************************/
+
+
+@media screen and (min-width:768px){
+
+  /******************** Generalistics ******************/
+
+body{
+  font-size: 21px;
+}
+
+.title{
+  font-size:30px;
+}
+
+.titleContainer{
+  min-height: 80px;
+  max-width: 35%;
+}
+
+.imgDegustation{
+  max-width: 50vw;
+  height: auto;
+}
+
+.gouttiere{
+  position: relative;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+/*/////////////////////////////////////////////*/
+
+/******************** Header ******************/
+
+#arrow{
+  display: none;
+}
+header{
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height : 100vh;
+}
+
+header > div {
+  width: 100%;
+  max-height: 70vh;
+}
+
+#logo{
+  height: 10rem;
+  width: 10rem;
+  margin: 1rem;
+}
+
+#divLogo{
+ margin: 0%;
+ border-top-left-radius: 0%;
+ border-top-right-radius: 0%;
+ display:flex;
+ align-items: center;
+ max-height: 30vh;
+}
+
+.citronBackground>img{
+  width: 100%;
+}
+
+q{
+  text-align: center;
+  display: block;
+  padding-top:calc(0.1*100%);
+  padding-bottom: calc(0.3*100%);
+  
+}
+
+/*/////////////////////////////////////////////*/
+
+
+/******************** Layers & transitions ******************/
+#transitionLayer{
+  display: block;
+  width: 100vw;
+}
+
+div.card#firstLayer{
+  padding: 2rem 5% 0rem 5%;
+}
+
+/*/////////////////////////////////////////////*/
+
+/******************** Form ******************/
+
+input{
+  font-size: 21px;
+}
+
+#informations > input{
+  margin : 0rem 0rem 1rem 0rem;
+}
+
+
+
+form>#informations{
+  line-height: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+form>select{
+  width: 80vw;
+  height:3rem;
+  line-height:3rem;
+  font-size: 21px;
+}
+
+input::placeholder{
+  color: transparent;
+}
+
+.formLabel{
+  visibility: visible;
+  margin-bottom: 0px;
+}
+
+#mailInfos>label{
+  max-height: 100%;
+  background-color: #fdf8d7;
+}
+
+#mailInfos{
+  margin-bottom : 3rem;
+}
+/*/////////////////////////////////////////////*/
+
+/******************** Button Combava ******************/
+
+#buttonContainer{
+  width: 20em;
+  margin: 0em 30em 5em 30em;
+  min-width: 20em;
+  display: grid;
+  grid: 100% / 25% 50% 25%;
+}
+
+#buttonContainer>*{
+  margin: auto;
+}
+
+#buttonContainerCombava{
+  width: 20em;
+  margin: 5em 5em 5em 5em;
+  min-width: 20em;
+  display: grid;
+  grid: 100% / 25% 50% 25%;
+}
+
+#buttonContainerCombava>*{
+  margin: auto;
+}
+/*/////////////////////////////////////////////*/
+
+/******************** Footer ******************/
+
+footer>div>img{
+  width: 100%;
+  margin-top: -30vw;
+}
+
+/*/////////////////////////////////////////////*/
+}
+
+/********************************* CAROUSEL ********************************/
+
+
+
+.carousel-slide{
+  position: relative;
+  flex : 0 0 100%;
+  width: 100%;
+}
+
+.carousel-slide>iframe{
+  width:100%;
+  height: 25em;
+}
+
+
+.carousel-slider{
+  height:60vh;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.carousel{
+  position: relative;
+  perspective: 100px;
+}
+
+.carousel_slide:before {
+  content: counter(item);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%,-40%,70px);
+  color: #fff;
+  font-size: 2em;
+}
+
+.carousel::before,
+.carousel::after,
+.carousel_prev,
+.carousel_next {
+  position: absolute;
+  top: 0;
+  margin-top: 15rem;
+  width: 4rem;
+  height: 5rem;
+  transform: translateY(-50%);
+  border-radius: 1em;
+  font-size: 0;
+  outline: 0;
+}
+
+
+
+.carousel, .carousel>*::-webkit-scrollbar-track {
+    background: transparent;
+}
+.carousel, 
+.carousel>*::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: none;
+}
+
+.carousel::before, .carousel_prev {
+  left: -1rem;
+}
+
+.carousel::after, .carousel_next {
+  right: -1rem;
+}
+
+.carousel::before,
+.carousel::after {
+  content: '';
+  z-index: 1;
+  background-image: url(../site/img/double_fleche_contour_jaune.png);
+  background-color: #fdf8d7;
+  background-size: 1.5rem 1.5rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #fff;
+  font-size: 2.5rem;
+  pointer-events: none;
+}
+
+.carousel>* {
+  box-sizing: border-box;
+  scrollbar-color: transparent transparent; /* thumb and track color */
+  scrollbar-width: 0px;
+}
+
+.carousel>span{
+  color : black;
+  margin-left: 18%;
+}
+
+.carousel>*::-webkit-scrollbar {
+  width: 0;
+}
+
+
+.carousel>*::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: none;
+}
+
+.carousel::before{
+  transform: translateY(-50%) rotate(90deg);
+}
+
+.carousel::after{
+  transform: translateY(-50%) rotate(-90deg);
+}
+
+li>div{
+  width:100%;
+  padding-top: 2px;
+}
+
+li>div>span{
+  font-family: 'Rock Salt', cursive;
+}
